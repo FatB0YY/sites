@@ -1,0 +1,19 @@
+.popup_engineer, .popup {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.popup.show,
+.popup_engineer.show{
+    transition: all 0.5s ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup.hide,
+.popup_engineer.hide{
+    transition: all 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+}

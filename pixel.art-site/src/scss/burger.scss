@@ -1,0 +1,50 @@
+.burger-menu {
+    display: none;
+}
+
+.burger-menu.active {
+    display: block;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 4;
+}
+
+.main {
+    padding-top: 85px;
+}
+
+.popup-design form,
+.popup-consultation form {
+    background-color: #ededed;
+}
+
+.pageup {
+    opacity: 1;
+    position: fixed;
+    bottom: 100px;
+    right: 2rem;
+    z-index: 19;
+    cursor: pointer;
+    border: 0;
+    transition: 1s all;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.pageup:hover {
+    -webkit-box-shadow: 0px 0px 50px 13px rgba(197, 26, 187, 0.48);
+    -moz-box-shadow: 0px 0px 50px 13px rgba(197, 26, 187, 0.48);
+    box-shadow: 0px 0px 50px 13px rgba(197, 26, 187, 0.48);
+    background-color: rgba(197, 26, 187, 0.25);
+}
+
+.pageup img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,200 @@
+@mixin center-elems() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header,
+    .header__links,
+    .header__left-block,
+    .header__links {
+        @include center-elems;
+        .header__link {
+            margin-right: 0px;
+            margin: 5px 0px;
+        }
+        margin: 10px 0px;
+    }
+    .header {
+        height: auto !important;
+    }
+    .tabcontainer {
+        @include center-elems;
+        flex-direction: column-reverse;
+        padding-bottom: 35px;
+        width: auto;
+        .tabcontent {
+            width: 320px;
+            .tabcontent__descr {
+                position: static;
+                width: 300px;
+                height: auto;
+                margin: 0 auto;
+                margin: 10px;
+                padding: 9px;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 20px;
+            }
+            img {
+                height: auto;
+            }
+        }
+        .tabheader__items {
+            padding-left: 0;
+        }
+    }
+    .offer {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .offer_container {
+        @include center-elems;
+        .offer__text {
+            width: 300px;
+            .title {
+                font-size: 33px;
+            }
+            .offer__descr {
+                margin-bottom: 18px;
+                margin-top: 18px;
+            }
+        }
+    }
+    .sidepanel {
+        display: none;
+    }
+    .preview {
+        padding-bottom: 28px;
+        .preview__life {
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+    .container_advantages {
+        @include center-elems;
+        .offer__advantages {
+            width: 300px;
+            margin-top: 0;
+        }
+    }
+    .calculating__choose_medium {
+        width: 300px;
+        @include center-elems;
+        input {
+            margin: 5px 0px;
+            width: 170px !important;
+        }
+    }
+    .calculating__choose_big {
+        width: 300px;
+        @include center-elems;
+        .calculating__choose-item {
+            margin: 5px 0px;
+        }
+    }
+    .calculating__choose-item {
+        width: 153px !important;
+    }
+    .calculating__total {
+        width: 300px;
+        @include center-elems;
+    }
+    .menu__field {
+        padding-top: 0px;
+    }
+    .menu__items {
+        @include center-elems;
+        .menu__item {
+            width: 300px;
+            margin: 15px auto;
+        }
+    }
+    .order_container {
+        @include center-elems;
+        .order__form {
+            @include center-elems;
+            padding: 0;
+            margin: 0 auto;
+            .order__input {
+                margin: 5px 0px;
+            }
+            img {
+                display: none;
+            }
+            .btn {
+                margin-top: 5px;
+            }
+        }
+        .title {
+            font-size: 33px;
+            margin-bottom: 15px;
+        }
+    }
+    .promotion {
+        padding-bottom: 25px;
+    }
+    .container_promotion {
+        @include center-elems;
+        .promotion__text {
+            margin: 0 auto;
+            width: 300px;
+        }
+        .promotion__timer {
+            margin: 0 auto;
+            width: 100%;
+            .timer {
+                padding: 0px;
+                justify-content: center;
+                .timer__block {
+                    width: 85px;
+                    height: 99px;
+                    font-size: 14px;
+                    span {
+                        font-size: 35px;
+                    }
+                }
+            }
+            .title {
+                text-align: center;
+            }
+        }
+    }
+    .footer_container {
+        @include center-elems;
+        align-items: center !important;
+        .call {
+            a {
+                text-align: center;
+            }
+        }
+    }
+    .modal-window {
+        width: 300px;
+        .modal__input {
+            width: 230px;
+        }
+        .btn {
+            width: 230px;
+        }
+    }
+    .menu {
+        padding-bottom: 0;
+    }
+    .swiper-container {
+        width: 300px;
+    }
+    .container_advantages {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .offer__slider {
+        width: 300px;
+    }
+}

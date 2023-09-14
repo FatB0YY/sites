@@ -1,0 +1,43 @@
+@import '~normalize.css';
+@font-face {
+    font-family: 'Mark';
+    src: url('../assets/font/Mark-Heavy.woff2') format('woff2'), url('../assets/font/Mark-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark';
+    src: url('../assets/font/Mark-Regular.woff2') format('woff2'), url('../assets/font/Mark-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.status {
+    text-align: center;
+}
+
+.plus__content {
+    transition: all 0.3s ease;
+    transform: rotate(0deg) translateX(-50%) translateY(-50%);
+}
+
+.plus__content.active {
+    transform: rotate(45deg) translateX(-70%) translateY(0%);
+}
+
+.modules__info-btns .slick-prev,
+.modules__info-btns .slick-next {
+    border: 2px solid #6d53af !important;
+}
+
+.modules__info-btns .slick-prev svg path,
+.modules__info-btns .slick-next svg path {
+    fill: #6d53af !important;
+}
+
+.menu__block-schedule {
+    z-index: 999;
+}
+
+@import './slider.scss';

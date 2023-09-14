@@ -1,0 +1,24 @@
+.popup-design,
+.popup-consultation,
+.popup-gift {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.popup-design.show,
+.popup-consultation.show,
+.popup-gift.show {
+    transition: all 0.5s ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-design.hide,
+.popup-consultation.hide,
+.popup-gift.hide {
+    transition: all 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+}
